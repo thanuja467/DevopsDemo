@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY Example.java /app
 RUN javac Example.java
