@@ -1,1 +1,17 @@
-name: 
+name: My First GitHub Actions workflow
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checking out code
+    - uses: actions/checkout@v4
+    
+    - name: Build Docker Image
+    - run: docker build -t simplejava-app .
+    
+    - name: Run Docker Container
+      run: docker run simplejava-app
