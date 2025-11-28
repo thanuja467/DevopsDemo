@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM docker.io/library/openjdk:17-jdk-slim
 WORKDIR /app
 COPY Example.java /app
 RUN javac Example.java
