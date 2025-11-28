@@ -1,5 +1,6 @@
-name: My First GitHub Actions workflow
+name: Docker images
 on:
+  workflow_dispatch:
   push:
     branches: [main]
 
