@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Build Docker Image
-        run: docker build -t simplejava-app .
+        run: docker build --no-cache -t simplejava-app .
     
       - name: Run Docker Container
         run: docker run simplejava-app
