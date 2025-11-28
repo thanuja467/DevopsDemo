@@ -11,7 +11,7 @@ jobs:
     - name: Checking out code
     - uses: actions/checkout@v4
     
-    - name: Build Docker Image
+    - name: Build Docker image
     - run: docker build -t simplejava-app .
     
     - name: Run Docker Container
